@@ -129,12 +129,12 @@ To use this method:
        
   :Note:
     The simplest way to achive that the specified user has write permissions to the directory whitout the security concerns
-    is to create a user in the server that can act on behaf of all the sites. All the **full path** fields should be set to this users directory
+    is to create a user in the server that can act on behaf of all the sites. All the **full path** fields should be set to this users directory.
 
-    #. In this config you wolud have a user on the server, lets say **acme**. 
+    #. In this configuration you wolud have a user on the server, let's say **acme**. 
     #. In the home directory of the designated user create the folder structure **~/.well-known/acme-challenge**
     #. In webserver configuration create an alias for the path **/.well-known/acme-challenge** for all sites.
-      * In Apache2 it would be somthing like this::
+      * In Apache2 it would be something like this::
         
           #Acme config for apache (/etc/acpache2/conf-avalable/acme.conf)
           #Add to conf-available
